@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="509.0" prefWidth="835.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wgu.software2_c195.Controller.AppointmentsController">
+   <children>
+      <RadioButton fx:id="WeeklyBut" layoutX="257.0" layoutY="51.0" mnemonicParsing="false" onAction="#WeeklyButAct" text="Weekly" />
+      <RadioButton fx:id="MonthlyBut" layoutX="417.0" layoutY="51.0" mnemonicParsing="false" onAction="#MonthlyButAct" text="Monthly" />
+      <RadioButton fx:id="AllTimeBut" layoutX="577.0" layoutY="51.0" mnemonicParsing="false" onAction="#AllTimeButAct" text="All-Time" />
+      <TableView fx:id="appTable" layoutX="14.0" layoutY="90.0" prefHeight="290.0" prefWidth="810.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="31.199995040893555" text="ID" />
+          <TableColumn fx:id="titleCol" prefWidth="65.39999389648438" text="Title" />
+            <TableColumn fx:id="descriptionCol" prefWidth="94.79999542236328" text="Description" />
+            <TableColumn fx:id="locationCol" prefWidth="68.79998779296875" text="Location" />
+            <TableColumn fx:id="contactCol" prefWidth="65.60000610351562" text="Contact ID" />
+            <TableColumn fx:id="typeCol" prefWidth="110.00003051757812" text="Type" />
+            <TableColumn fx:id="startCol" prefWidth="123.59994506835938" text="Start Date and Time" />
+            <TableColumn fx:id="endCol" prefWidth="115.20001220703125" text="End Date and Time" />
+            <TableColumn fx:id="costumerCol" prefWidth="82.0" text="Costumer_ID" />
+            <TableColumn fx:id="userIdCol" prefWidth="52.79998779296875" text="User_ID" />
+        </columns>
+      </TableView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2197ff00" height="89.0" layoutX="294.0" layoutY="406.0" opacity="0.26" stroke="BLACK" strokeType="INSIDE" width="247.0" />
+      <Button fx:id="addBut" layoutX="305.0" layoutY="415.0" mnemonicParsing="false" onAction="#addBut" prefHeight="26.0" prefWidth="50.0" text="Add" />
+      <Button fx:id="updateBut" layoutX="388.0" layoutY="415.0" mnemonicParsing="false" onAction="#updateBut" prefHeight="26.0" prefWidth="61.0" text="Update" />
+      <Button fx:id="deleteBut" layoutX="483.0" layoutY="415.0" mnemonicParsing="false" onAction="#deletebut" text="Delete" />
+      <Label layoutX="14.0" layoutY="14.0" text="Appointments">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="costumerBut" layoutX="432.0" layoutY="460.0" mnemonicParsing="false" onAction="#costumerBut" text="View Costumers" />
+      <Button fx:id="Reports" layoutX="305.0" layoutY="460.0" mnemonicParsing="false" onAction="#ReportsBut" prefHeight="26.0" prefWidth="102.0" text="View Reports" />
+   </children>
+</AnchorPane>
