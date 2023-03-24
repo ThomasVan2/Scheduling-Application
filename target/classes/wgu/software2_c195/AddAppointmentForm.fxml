@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="UserIdField" prefHeight="699.0" prefWidth="579.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wgu.software2_c195.Controller.AddAppointmentController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Add Appointment">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="120.0" text="Customer" />
+      <ComboBox fx:id="CustomerBox" layoutX="135.0" layoutY="120.0" onAction="#CostumerBoxAct" prefWidth="150.0" />
+      <Label layoutX="50.0" layoutY="140.0" />
+      <Label layoutX="20.0" layoutY="70.0" text="Appointment ID" />
+      <TextField fx:id="AppointmentId" disable="true" editable="false" layoutX="135.0" layoutY="70.0" />
+      <Label layoutX="20.0" layoutY="220.0" text="User ID" />
+      <Label layoutX="20.0" layoutY="170.0" text="Customer ID" />
+      <ComboBox fx:id="UserIdBox" layoutX="135.0" layoutY="220.0" prefWidth="150.0" />
+      <Label layoutX="20.0" layoutY="370.0" text="Title" />
+      <Label layoutX="20.0" layoutY="570.0" text="Description" />
+      <TextArea fx:id="DescriptionBox" layoutX="27.0" layoutY="605.0" prefHeight="70.0" prefWidth="237.0" />
+      <TextField fx:id="TitleField" layoutX="135.0" layoutY="370.0" />
+      <Label layoutX="20.0" layoutY="420.0" text="Location" />
+      <Label layoutX="20.0" layoutY="320.0" text="Type" />
+      <Label layoutX="20.0" layoutY="270.0" text="Contact ID" />
+      <TextField fx:id="LocationField" layoutX="135.0" layoutY="420.0" />
+      <Label layoutX="20.0" layoutY="470.0" text="Begin Date" />
+      <Label layoutX="20.0" layoutY="520.0" text="Begin time" />
+      <Label layoutX="324.0" layoutY="470.0" text="End Date" />
+      <Label layoutX="324.0" layoutY="520.0" text="End Time" />
+      <DatePicker fx:id="BeginDateField" layoutX="135.0" layoutY="470.0" onAction="#BeginDateFieldAct" prefHeight="26.0" prefWidth="150.0" promptText="Pick a Date" />
+      <DatePicker fx:id="EndDateField" disable="true" editable="false" layoutX="387.0" layoutY="470.0" prefHeight="26.0" prefWidth="150.0" />
+      <Spinner fx:id="BeginHH" layoutX="135.0" layoutY="520.0" onMouseClicked="#SpinnerHH" prefHeight="26.0" prefWidth="49.0" />
+      <Spinner fx:id="BeginMM" layoutX="200.0" layoutY="520.0" prefHeight="26.0" prefWidth="61.0" />
+      <Spinner fx:id="EndtimeMM" layoutX="451.0" layoutY="520.0" prefHeight="26.0" prefWidth="62.0" />
+      <Spinner fx:id="EndTimeHH" layoutX="387.0" layoutY="520.0" onMouseClicked="#EndSpinnerHH" prefHeight="26.0" prefWidth="49.0" />
+      <Label layoutX="146.0" layoutY="502.0" text="hh" />
+      <Label layoutX="210.0" layoutY="502.0" text="mm" />
+      <Label layoutX="398.0" layoutY="502.0" text="hh" />
+      <Label layoutX="455.0" layoutY="502.0" text="mm" />
+      <Button fx:id="saveBut" layoutX="416.0" layoutY="649.0" mnemonicParsing="false" onAction="#saveBut" text="Save" />
+      <Button fx:id="cancelBut" layoutX="501.0" layoutY="649.0" mnemonicParsing="false" onAction="#cancelBut" text="Cancel" />
+      <TextField fx:id="CustomerIdField" disable="true" layoutX="135.0" layoutY="170.0" />
+      <ComboBox fx:id="ContactIdBox" layoutX="135.0" layoutY="270.0" prefWidth="150.0" />
+      <ComboBox fx:id="TypeBox" layoutX="135.0" layoutY="320.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="509.0" prefWidth="835.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wgu.software2_c195.Controller.AllCostumersController">
+   <children>
+      <TableView fx:id="costumerTable" layoutX="14.0" layoutY="90.0" prefHeight="290.0" prefWidth="810.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="nameCol" prefWidth="180.0" text="Name" />
+            <TableColumn fx:id="phoneCol" prefWidth="158.0" text="Phone Number" />
+            <TableColumn fx:id="addressCol" prefWidth="159.19998168945312" text="Adress" />
+            <TableColumn fx:id="postalCol" prefWidth="105.0" text="Postal Code" />
+            <TableColumn fx:id="stateCol" prefWidth="134.20001220703125" text="State" />
+        </columns>
+      </TableView>
+       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2197ff00" height="89.0" layoutX="294.0" layoutY="406.0" opacity="0.26" stroke="BLACK" strokeType="INSIDE" width="247.0" />
+      <Label layoutX="14.0" layoutY="14.0" text="Costumers">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="updateBut" layoutX="389.0" layoutY="416.0" mnemonicParsing="false" onAction="#updateBut" text="Update" />
+      <Button fx:id="addBut" layoutX="321.0" layoutY="416.0" mnemonicParsing="false" onAction="#addBut" text="Add" />
+      <Button fx:id="deleteBut" layoutX="474.0" layoutY="416.0" mnemonicParsing="false" onAction="#deleteBut" text="Delete" />
+      <Button fx:id="appBut" layoutX="360.0" layoutY="460.0" mnemonicParsing="false" onAction="#appBut" prefHeight="26.0" prefWidth="113.0" text="See Appointments" />
+   </children>
+</AnchorPane>

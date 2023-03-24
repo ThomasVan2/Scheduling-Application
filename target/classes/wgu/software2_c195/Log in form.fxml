@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="338.0" prefWidth="442.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wgu.software2_c195.Controller.LogInController">
+   <children>
+      <Label fx:id="Username" layoutX="44.0" layoutY="136.0" text="Username" />
+      <Label fx:id="Password" layoutX="45.0" layoutY="183.0" text="Password" />
+      <TextField fx:id="UsernameField" layoutX="142.0" layoutY="132.0" />
+      <Label fx:id="Welcome" layoutX="164.0" layoutY="35.0" text="Welcome">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="LoginBut" layoutX="194.0" layoutY="280.0" mnemonicParsing="false" onAction="#LoginButAction" text="Login" />
+      <Label fx:id="TimezoneLabel" layoutX="14.0" layoutY="312.0" text="Time Zone" />
+      <PasswordField fx:id="PasswordField" layoutX="142.0" layoutY="179.0" />
+      <ComboBox fx:id="LanguageBox" layoutX="143.0" layoutY="232.0" onAction="#LanguageBoxAct" prefWidth="150.0" promptText="Select Language" />
+   </children>
+</AnchorPane>
